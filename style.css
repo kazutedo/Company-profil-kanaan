@@ -1092,8 +1092,8 @@ section {
 
 /* Tambahkan variabel warna */
 :root {
-  --primary-blue: #007bff;
-  --hover-blue: #0056b3;
+  --primary-blue: #e69d17;
+  --hover-blue: #ffc70f;
 }
 
 /* Reset container width */
@@ -1196,7 +1196,7 @@ section {
 }
 
 .filter-btn.active {
-  background: #007bff;
+  background: #ff7f00;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
@@ -2089,7 +2089,7 @@ body {
   padding: 12px 25px;
   font-size: 1rem;
   font-weight: 500;
-  color: #007bff;
+  color: #ff7f00;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -2101,7 +2101,7 @@ body {
 
 .view-all-btn:hover {
   background: #e9f5ff;
-  border-color: #007bff;
+  border-color: #ff7f00;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
