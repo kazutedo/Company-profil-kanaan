@@ -55,7 +55,7 @@ nav ul li a:hover {
   height: 80vh;
   margin-top: -70px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("img/mario-gogh-VBLHICVh-lI-unsplash.jpg"); /* Ganti dengan path gambar Anda */
+    url("img/home/mario-gogh-VBLHICVh-lI-unsplash.jpg"); /* Ganti dengan path gambar Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1224,7 +1224,9 @@ section {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
 }
 
@@ -1392,7 +1394,8 @@ section {
   left: 0;
   transform: var(--indicator-transform, translateX(0%));
   background: #007bff; /* Default color */
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+  transition:
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
     background-color 0.3s ease;
   z-index: 1;
   border-radius: 2px;
@@ -1872,7 +1875,9 @@ section {
   border-radius: 8px; /* Slightly increased radius */
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Add hover effect to reference images */
@@ -2024,7 +2029,9 @@ body {
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Adjust animation for multiple items */
@@ -2184,7 +2191,9 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s forwards;
