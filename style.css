@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 .home-content {
   max-width: 900px;
-  color: #ffffff;
+  color: #ffff;
   z-index: 1;
   text-align: center;
   padding: 4rem 2rem;
@@ -81,7 +81,9 @@ nav ul li a:hover {
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
+.company-title h1 {
+  color: #ffb700;
+}
 .company-title h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -1092,8 +1094,8 @@ section {
 
 /* Tambahkan variabel warna */
 :root {
-  --primary-blue: #e69d17;
-  --hover-blue: #ffc70f;
+  --primary-blue: #ffb700;
+  --hover-blue: #ffb700;
 }
 
 /* Reset container width */
@@ -1196,7 +1198,7 @@ section {
 }
 
 .filter-btn.active {
-  background: #ff7f00;
+  background: #ffb700;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
