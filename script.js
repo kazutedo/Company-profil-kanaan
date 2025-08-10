@@ -920,3 +920,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Handle scroll to top when page loads with #top hash
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if URL contains #top hash
+  if (window.location.hash === "#top") {
+    // Smooth scroll to top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 100); // Small delay to ensure page is fully loaded
+  }
+});
