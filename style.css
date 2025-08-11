@@ -16,6 +16,44 @@ a {
   -webkit-touch-callout: none;
 }
 
+/* ULTIMATE OVERRIDE FOR HOSTED WEBSITES */
+/* This will override any server-side CSS that might interfere */
+html body .contact .contact-info a.location-link,
+html body .contact .contact-info a.email-link,
+html body section.contact .contact-info a.location-link,
+html body section.contact .contact-info a.email-link,
+html body div.contact div.contact-info a.location-link,
+html body div.contact div.contact-info a.email-link {
+  color: #666 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* All states with maximum specificity */
+html body .contact .contact-info a.location-link:link,
+html body .contact .contact-info a.location-link:visited,
+html body .contact .contact-info a.location-link:hover,
+html body .contact .contact-info a.location-link:active,
+html body .contact .contact-info a.location-link:focus,
+html body .contact .contact-info a.email-link:link,
+html body .contact .contact-info a.email-link:visited,
+html body .contact .contact-info a.email-link:active,
+html body .contact .contact-info a.email-link:focus {
+  color: #666 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Email hover - only exception */
+html body .contact .contact-info a.email-link:hover {
+  color: #ff7f00 !important;
+  text-decoration: none !important;
+}
+
 /* Specific reset for contact links - STRONGEST OVERRIDE */
 .contact-card a,
 .contact-info a,
