@@ -1564,7 +1564,6 @@ section {
   background: #f8f9fa;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  text-decoration: none;
 }
 
 .contact-card:hover {
@@ -1574,41 +1573,41 @@ section {
 
 /* Remove link styling for location card */
 .location-link {
-  text-decoration: none !important;
-  color: inherit !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .location-link:hover,
 .location-link:focus,
 .location-link:active,
 .location-link:visited {
-  text-decoration: none !important;
-  color: inherit !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* Email link styling */
 .email-link {
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none;
+  color: inherit;
   transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: #ff7f00 !important;
-  text-decoration: none !important;
+  color: #ff7f00;
+  text-decoration: none;
 }
 
 .email-link:focus,
 .email-link:active,
 .email-link:visited {
-  color: inherit !important;
-  text-decoration: none !important;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Additional reset for all devices and browsers */
