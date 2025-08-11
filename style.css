@@ -1556,6 +1556,31 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Remove link styling for location card */
+.location-link {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.location-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Email link styling */
+.email-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #ff7f00;
+  text-decoration: none;
+}
+
 .contact-icon {
   font-size: 2.5rem;
   color: #007bff;
