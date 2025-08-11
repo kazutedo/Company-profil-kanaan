@@ -1558,27 +1558,63 @@ section {
 
 /* Remove link styling for location card */
 .location-link {
-  text-decoration: none;
-  color: inherit;
-  border: none;
-  outline: none;
+  text-decoration: none !important;
+  color: inherit !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-.location-link:hover {
-  text-decoration: none;
-  color: inherit;
+.location-link:hover,
+.location-link:focus,
+.location-link:active,
+.location-link:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Email link styling */
 .email-link {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
   transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: #ff7f00;
-  text-decoration: none;
+  color: #ff7f00 !important;
+  text-decoration: none !important;
+}
+
+.email-link:focus,
+.email-link:active,
+.email-link:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Additional reset for all devices and browsers */
+a.location-link,
+a.location-link * {
+  color: inherit !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+a.email-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 .contact-icon {
