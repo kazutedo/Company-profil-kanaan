@@ -19,19 +19,30 @@ a {
 /* Specific reset for contact links - STRONGEST OVERRIDE */
 .contact-card a,
 .contact-info a,
-a.contact-card,
-a.location-link,
 a.email-link {
   color: #666 !important;
   text-decoration: none !important;
   border: none !important;
   outline: none !important;
-  background: none !important;
+  background: transparent !important;
   box-shadow: none !important;
   -webkit-tap-highlight-color: transparent !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+}
+
+/* Location link - preserve card background */
+a.location-link {
+  color: #666 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  /* Do NOT override background - let card keep its background */
 }
 
 /* All link states for contact section */
@@ -1625,15 +1636,12 @@ section {
 /* Mobile-first approach - strongest CSS reset for contact links */
 @media screen {
   /* Target ALL contact section links with maximum specificity */
-  .contact .contact-card a,
+  /* Text links inside contact cards - preserve card background */
+  .contact .contact-card a:not(.location-link),
   .contact .contact-info a,
-  .contact a.contact-card,
-  .contact a.location-link,
   .contact a.email-link,
-  section.contact .contact-card a,
+  section.contact .contact-card a:not(.location-link),
   section.contact .contact-info a,
-  section.contact a.contact-card,
-  section.contact a.location-link,
   section.contact a.email-link {
     color: #666 !important;
     text-decoration: none !important;
@@ -1648,6 +1656,24 @@ section {
     -moz-appearance: none !important;
     appearance: none !important;
     transition: color 0.3s ease !important;
+  }
+
+  /* Location link - special handling to preserve card background */
+  .contact a.location-link,
+  section.contact a.location-link {
+    color: #666 !important;
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    transition: color 0.3s ease !important;
+    /* Background is inherited from .contact-card */
   }
 
   /* All pseudo-classes for contact links */
