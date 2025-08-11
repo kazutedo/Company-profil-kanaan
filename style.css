@@ -383,7 +383,7 @@ nav ul li a:hover {
 /* Responsif */
 @media (max-width: 768px) {
   .about {
-    padding: 40px 20px;
+    padding: 10px 20px 10px 10px;
   }
 
   .about-container {
@@ -409,15 +409,35 @@ nav ul li a:hover {
     padding: 20px;
   }
 
+  .about-images {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .image-stack {
     height: 400px;
     width: 100%;
+    position: relative;
   }
 
   .image-1,
   .image-2 {
     width: 85%;
     height: 250px;
+    position: absolute;
+  }
+
+  .image-1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .image-2 {
+    bottom: 0;
+    right: 0;
+    z-index: 2;
   }
 }
 
@@ -607,7 +627,7 @@ html {
 
 @media (max-width: 768px) {
   .services {
-    padding: 40px 20px;
+    padding: 10px 20px 40px 5px;
   }
 
   .section-header h2 {
