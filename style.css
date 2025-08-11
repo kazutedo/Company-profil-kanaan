@@ -1596,6 +1596,7 @@ section {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
+  color: #888;
 }
 
 .email-link:hover {
