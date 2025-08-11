@@ -10,6 +10,21 @@ html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* Global link reset for mobile */
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Specific reset for contact links */
+.contact-card a,
+.contact-info a {
+  color: inherit !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
 body {
   background-color: #f5f5f5;
   padding-top: 80px;
@@ -1615,6 +1630,52 @@ a.email-link {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+}
+
+/* Mobile specific fixes */
+@media (max-width: 768px) {
+  .location-link,
+  .location-link:link,
+  .location-link:visited,
+  .location-link:hover,
+  .location-link:active,
+  .location-link:focus {
+    color: #333333 !important;
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+  }
+
+  .email-link,
+  .email-link:link,
+  .email-link:visited,
+  .email-link:active,
+  .email-link:focus {
+    color: #333333 !important;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    -webkit-touch-callout: none !important;
+  }
+
+  .email-link:hover {
+    color: #ff7f00 !important;
+    text-decoration: none !important;
+  }
+
+  /* Force override for all child elements */
+  .location-link *,
+  .email-link * {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
 }
 
 .contact-icon {
