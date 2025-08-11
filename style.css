@@ -16,13 +16,61 @@ a {
   -webkit-touch-callout: none;
 }
 
-/* Specific reset for contact links */
+/* Specific reset for contact links - STRONGEST OVERRIDE */
 .contact-card a,
-.contact-info a {
-  color: inherit !important;
+.contact-info a,
+a.contact-card,
+a.location-link,
+a.email-link {
+  color: #666 !important;
   text-decoration: none !important;
   border: none !important;
   outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* All link states for contact section */
+.contact-card a:link,
+.contact-card a:visited,
+.contact-card a:hover,
+.contact-card a:active,
+.contact-card a:focus,
+.contact-info a:link,
+.contact-info a:visited,
+.contact-info a:hover,
+.contact-info a:active,
+.contact-info a:focus,
+a.contact-card:link,
+a.contact-card:visited,
+a.contact-card:hover,
+a.contact-card:active,
+a.contact-card:focus,
+a.location-link:link,
+a.location-link:visited,
+a.location-link:hover,
+a.location-link:active,
+a.location-link:focus,
+a.email-link:link,
+a.email-link:visited,
+a.email-link:active,
+a.email-link:focus {
+  color: #666 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Email hover effect only */
+a.email-link:hover {
+  color: #ff7f00 !important;
+  text-decoration: none !important;
 }
 
 body {
@@ -1571,111 +1619,84 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Remove link styling for location card */
-.location-link {
-  text-decoration: none;
-  color: inherit;
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
+/* CONTACT SECTION - ULTIMATE LINK RESET */
+/* This replaces all previous contact link styling with a single, powerful solution */
 
-.location-link:hover,
-.location-link:focus,
-.location-link:active,
-.location-link:visited {
-  text-decoration: none;
-  color: inherit;
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-
-/* Email link styling */
-.email-link {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-  color: #888;
-}
-
-.email-link:hover {
-  color: #ff7f00;
-  text-decoration: none;
-}
-
-.email-link:focus,
-.email-link:active,
-.email-link:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Additional reset for all devices and browsers */
-a.location-link,
-a.location-link * {
-  color: inherit !important;
-  text-decoration: none !important;
-  border: none !important;
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-}
-
-a.email-link {
-  color: inherit !important;
-  text-decoration: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-}
-
-/* Mobile specific fixes */
-@media (max-width: 768px) {
-  .location-link,
-  .location-link:link,
-  .location-link:visited,
-  .location-link:hover,
-  .location-link:active,
-  .location-link:focus {
-    color: #333333 !important;
+/* Mobile-first approach - strongest CSS reset for contact links */
+@media screen {
+  /* Target ALL contact section links with maximum specificity */
+  .contact .contact-card a,
+  .contact .contact-info a,
+  .contact a.contact-card,
+  .contact a.location-link,
+  .contact a.email-link,
+  section.contact .contact-card a,
+  section.contact .contact-info a,
+  section.contact a.contact-card,
+  section.contact a.location-link,
+  section.contact a.email-link {
+    color: #666 !important;
     text-decoration: none !important;
     border: none !important;
     outline: none !important;
+    background: transparent !important;
     box-shadow: none !important;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    text-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
     -webkit-touch-callout: none !important;
-    -webkit-user-select: none !important;
-    -khtml-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    transition: color 0.3s ease !important;
   }
 
-  .email-link,
-  .email-link:link,
-  .email-link:visited,
-  .email-link:active,
-  .email-link:focus {
-    color: #333333 !important;
+  /* All pseudo-classes for contact links */
+  .contact .contact-card a:link,
+  .contact .contact-card a:visited,
+  .contact .contact-card a:hover,
+  .contact .contact-card a:active,
+  .contact .contact-card a:focus,
+  .contact .contact-info a:link,
+  .contact .contact-info a:visited,
+  .contact .contact-info a:hover,
+  .contact .contact-info a:active,
+  .contact .contact-info a:focus,
+  .contact a.contact-card:link,
+  .contact a.contact-card:visited,
+  .contact a.contact-card:hover,
+  .contact a.contact-card:active,
+  .contact a.contact-card:focus,
+  .contact a.location-link:link,
+  .contact a.location-link:visited,
+  .contact a.location-link:hover,
+  .contact a.location-link:active,
+  .contact a.location-link:focus,
+  .contact a.email-link:link,
+  .contact a.email-link:visited,
+  .contact a.email-link:active,
+  .contact a.email-link:focus {
+    color: #666 !important;
     text-decoration: none !important;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-    -webkit-touch-callout: none !important;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
-  .email-link:hover {
+  /* Email hover effect - only exception */
+  .contact a.email-link:hover {
     color: #ff7f00 !important;
     text-decoration: none !important;
   }
 
-  /* Force override for all child elements */
-  .location-link *,
-  .email-link * {
+  /* Force inheritance for all child elements */
+  .contact .contact-card a *,
+  .contact .contact-info a *,
+  .contact a.contact-card *,
+  .contact a.location-link *,
+  .contact a.email-link * {
     color: inherit !important;
-    text-decoration: none !important;
+    text-decoration: inherit !important;
   }
 }
 
